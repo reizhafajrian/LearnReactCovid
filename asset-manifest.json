@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/LearnReactCovid/static/css/main.e48493ef.chunk.css",
+    "main.js": "/LearnReactCovid/static/js/main.45fbb926.chunk.js",
+    "main.js.map": "/LearnReactCovid/static/js/main.45fbb926.chunk.js.map",
+    "runtime-main.js": "/LearnReactCovid/static/js/runtime-main.b5a7727c.js",
+    "runtime-main.js.map": "/LearnReactCovid/static/js/runtime-main.b5a7727c.js.map",
+    "static/js/2.5b4668dd.chunk.js": "/LearnReactCovid/static/js/2.5b4668dd.chunk.js",
+    "static/js/2.5b4668dd.chunk.js.map": "/LearnReactCovid/static/js/2.5b4668dd.chunk.js.map",
+    "index.html": "/LearnReactCovid/index.html",
+    "precache-manifest.a65719f433642941454c5eb246891d5f.js": "/LearnReactCovid/precache-manifest.a65719f433642941454c5eb246891d5f.js",
+    "service-worker.js": "/LearnReactCovid/service-worker.js",
+    "static/css/main.e48493ef.chunk.css.map": "/LearnReactCovid/static/css/main.e48493ef.chunk.css.map",
+    "static/js/2.5b4668dd.chunk.js.LICENSE.txt": "/LearnReactCovid/static/js/2.5b4668dd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b5a7727c.js",
+    "static/js/2.5b4668dd.chunk.js",
+    "static/css/main.e48493ef.chunk.css",
+    "static/js/main.45fbb926.chunk.js"
+  ]
+}
