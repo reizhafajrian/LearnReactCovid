@@ -1,8 +1,10 @@
 .container{
     margin: 50px 0;
+    padding: 10px;
 }
 .card{
     margin: 0 2% !important;
+    max-width: 100% !important;
 }
 
 .infected{
@@ -12,7 +14,20 @@
     border-bottom: 10px solid rgba(0,255,0 ,0.5);
 }
 .deaths{
-    border-bottom: 10px solid rgba(255,0,255,0.5);
+    border-bottom: 10px solid rgba(255,0,0,0.5);
+}
+.perawatan{
+    border-bottom: 10px solid rgba(255,225,53,0.5);
+}
+.gridcontainer{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media (max-width:876px){
+    .gridcontainer{
+        display: flex !important;
+        flex-direction: column !important;
+    }
 }
 @media (max-width:770px){
     .container{

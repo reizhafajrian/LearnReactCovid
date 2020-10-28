@@ -1,36 +1,33 @@
 import axios from 'axios';
 
-const url='https://covid19.mathdro.id/api';
+const url='https://indonesia-covid-19.mathdro.id/api';
 
-export const fetchData=async(country)=>{
-    let changeable=url;
-    if(country){
-        changeable=`${url}/countries/${country}`
-    }else{
-        changeable=url
-    }
+export const fetchData=async()=>{
     try{
-        const {data:{confirmed,recovered,deaths,lastUpdate}}=await axios.get(changeable);
+        const {data:{perawatan,sembuh,meninggal,jumlahKasus,lastUpdate}}=await axios.get(`${url}`);
         
         return {
-            confirmed,
-            recovered,
-            deaths,
-            lastUpdate
-};        
+           perawatan,sembuh,meninggal,jumlahKasus,lastUpdate
+        };
+             
     }
-    catch(error){};
+
+    catch(error){
+        console.log(error);
+    };
+    
 }
 
 export const fetchDailyData=async()=>{
     try{
-        const {data}= await axios.get(`${url}/daily`)
-        const modifydata=data.map((dailydata)=>({
-            confirmed:dailydata.confirmed.total,
-            deaths:dailydata.deaths.total,
-            date:dailydata.reportDate
-        }));
+        let {data}= await axios.get(`${url}/provinsi`);
+        data.data.pop();
 
+        const modifydata=data.data.map((hasildata)=>({
+            kasuspositif:hasildata.kasusPosi,
+            kasusmeninggal:hasildata.kasusMeni,
+            provinsi:hasildata.provinsi
+        }));
         return modifydata
     }
  
@@ -39,12 +36,13 @@ export const fetchDailyData=async()=>{
     }
 }
 
-export const FetchCountries=async()=>{
-    try{
-        const {data:{countries}}=await axios.get(`${url}/countries`)
-        return (countries.map((country)=>country.name ))
-    }
-    catch(error){
-        console.log(error)
-    }
-}
+
+// export const FetchCountries=async()=>{
+//     try{
+//         const {data:{countries}}=await axios.get(`${url}/countries`)
+//         return (countries.map((country)=>country.name ))
+//     }
+//     catch(error){
+//         console.log(error)
+//     }
+// }
