@@ -25,7 +25,7 @@ import cx from 'classnames';
                             }
                          </Typography>
                          <Typography variant="body2">
-                            Number of active cases of Covid-19  
+                            Jumlah Kasus Covid-19 Indonesia
                          </Typography>
                      </CardContent>
                  </Grid>
@@ -47,7 +47,7 @@ import cx from 'classnames';
                             }
                          </Typography>
                          <Typography variant="body2">
-                            Number of recoveries from Covid-19  
+                           Jumlah Pasien Sembuh Covid-19 Indonesia
                          </Typography>
                      </CardContent>
                  </Grid>
@@ -69,7 +69,7 @@ import cx from 'classnames';
                             }
                          </Typography>
                          <Typography variant="body2">
-                            Number of recoveries from Covid-19  
+                           Jumlah Pasien Meninggal Dunia Covid-19 Indonesia
                          </Typography>
                      </CardContent>
                  </Grid>
@@ -91,7 +91,7 @@ import cx from 'classnames';
                             }
                          </Typography>
                          <Typography variant="body2">
-                            Number of recoveries from Covid-19  
+                            Jumlah Kasus Dalam Perawatan Covid-19 Indonesia
                          </Typography>
                      </CardContent>
                  </Grid>
